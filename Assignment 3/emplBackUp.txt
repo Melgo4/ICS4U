@@ -1,0 +1,7 @@
+George,Harris,1234,56 Princess St,Ottawa,12.5,stock person
+Susan,Smit,4369,324 Queen St.,Ottawa,12.5,sales
+Fred ,Jones,3425,123 MyStreet Dr.,Ottawa,13.0,cashier
+Frank,hammond,3456,34 Main Stq,Kanata,20.0,Manager
+Tanya ,ellis,4123,54 Windam Way,Ottawa,12.0,sales
+Emilia,Johnston,3378,234 Parkway Drive,Ottawa,15.0,Assistant Manager
+Sarah,Lewis,0,45 NewPort Dr.,Merrickville,14.0,sales
