@@ -48,15 +48,27 @@ public class BasicStack<E> extends AbstractList<E> {
 	public int search(E e) {
 		if(e == null) {
 			for(int i = this.size - 1; i >= 0; i--) {
-				if(this.stack[i] == null)return this.size - i;
+				if(this.stack[i] == null)return this.size - i - 1;
 			}
 		} else {
 			for(int i = this.size - 1; i >= 0; i--) {
-				if(e.equals(this.stack[i]))return this.size - i;
+				if(e.equals(this.stack[i]))return this.size - i - 1;
 			}
 		}
 
 		return -1;
+	}
+
+	@Override
+	public E remove(int index) {
+		E e = this.get(index);
+
+		for(int i = index + 1; i < this.size; i++) {
+			this.stack[i - 1] = this.stack[i];
+		}
+
+		this.stack[--this.size] = null;
+		return e;
 	}
 
 	private void ensureCapacity() {
